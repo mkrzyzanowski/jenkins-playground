@@ -4,7 +4,7 @@ pipelineJob('testJob') {
     cpsScm {
         scm {
             lightweight()
-            git('https://github.com/mkrzyzanowski/jenkins-playground.git')
+            git('https://github.com/mkrzyzanowski/jenkins-playground.git', 'master')
             scriptPath 'pipelines/testJob.jenkinsfile'
         }
     }
