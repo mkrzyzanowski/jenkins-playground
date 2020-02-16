@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('seed') {
             steps {
-                jobDsl(targets: 'jobs/*.groovy', sandbox: false)
+                pipelineDsl(targets: 'jobs/*.groovy', sandbox: false)
             }
         }
     }
