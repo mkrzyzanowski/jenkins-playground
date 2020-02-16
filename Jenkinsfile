@@ -1,9 +1,9 @@
-pipeline{
-    stages{
-        stage("A"){
-            steps{
-                echo "========executing A========"
-                echo "${env.branch}"
+pipeline {
+    agent any
+    stages {
+        stage('seed') {
+            steps {
+                jobDsl(targets: 'jobs/*.groovy', sandbox: false)
             }
         }
     }
