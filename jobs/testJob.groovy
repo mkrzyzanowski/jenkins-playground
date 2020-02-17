@@ -1,4 +1,4 @@
-pipelineJob('testJob') {
+pipelineJob('test-folder/testJob') {
   displayName('Job DSL Test job')
   definition {
     cpsScm {
